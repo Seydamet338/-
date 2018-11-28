@@ -1,0 +1,92 @@
+Упражнение 1
+var value = prompt("Введите значение: ", "");
+console.log("value: ", value);
+(value == 1000)?(console.log("Верно")):(console.log("Неверно"));
+
+Упражнение 2
+var a = prompt("введите a: ", "");
+console.log("a: ", a);
+var a = 5 + 5;
+switch ( a ) {
+case 9:
+alert ( "Это меньше a");
+break;
+case 10:
+alert ("Это a");
+break;
+case 11:
+alert ("Это больше a");
+break;
+default:
+alert ("Это не a");
+}
+
+Упражнение 3
+var week = [];
+var lang;
+console.log("Язык: ", lang = prompt("Язык:"," "));
+if (lang == "ru")
+week = ["Понедельник", "Вторник"];
+else if (lang == "en")
+week = ["Monday", "Tuesday"];
+switch (lang)
+{
+case "ru":
+week = ["Понедельник", "Вторник"];
+break;
+case "en":
+week = ["Monday", "Tuesday"];
+break;
+default:
+}
+
+Упражнение 4"
+var number1 = prompt("Enter number 1: ", "12");
+var sign = prompt("Enter sign", " ");
+var number2 = prompt("Enter number 2: ", "12")
+console.log("number1: ",number1);
+console.log("sign: ",sign);
+console.log("number2: ",number2);
+switch (sign)
+{
+case "+":
+console.log("Ответ:", number1 + number2);
+break;
+case "-":
+console.log("Ответ:", number1 - number2);
+break;
+case ":":
+console.log("Ответ:", number1 / number2);
+break;
+case "*":
+console.log("Ответ:", number1 * number2);
+break;
+default:
+console.log("Неверно задано значение");
+}
+
+Упражнение 5
+var str, numberLetter;
+console.log("Строка: ", str = prompt("Введите слово", ""));
+numberLetter = 0;
+for (var i = 0; i < str.length; i++)
+if ("a" == str[i] || "i" == str[i] || "e" == str[i] || "o" == str[i]) numberLetter++;
+console.log("Количество с помощью if: ", numberLetter); n
+umberLetter = 0;
+for (var i = 0; i < str.length; i++)
+switch (str[i]) {
+case "a":
+numberLetter++;
+break;
+case "i":
+numberLetter++;
+break;
+case "e":
+numberLetter++;
+break;
+case "o":
+numberLetter++;
+break;
+default:
+}
+console.log("Количество при switch: ", numberLetter);
